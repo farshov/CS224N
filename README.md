@@ -16,7 +16,7 @@ CS224n: Natural Language Processing with Deep Learning Assignments Winter, 2019
 ![q2](images/word2vec)
 3. Cosine Similarity and Distance: searching Polysemous Words, Synonyms and Analogies, Bias.  
 ![q3_1](images/similarity.png)
-![q3_2](images/analogies)
+![q3_2](images/analogies.png)
 
 ## Assignment 2
 ### Word2Vec's losses and gradients 
