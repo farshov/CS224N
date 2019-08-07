@@ -9,13 +9,13 @@ CS224n: Natural Language Processing with Deep Learning Assignments Winter, 2019
 ## Assignment 1 
 ### Basic embedding technics
 
-1. Count-Based Word Vectors: Co-Occurrence Word Embeddings and Matrix, SVD for its dimentional reduction.
+1. Count-Based Word Vectors: Co-Occurrence Word Embeddings and Matrix, SVD for its dimentional reduction.\
 ![q1](images/co-occure)
 
-2. Prediction-Based Word Vectors: word2Vec.
-![q2](images/word2vec)
-3. Cosine Similarity and Distance: searching Polysemous Words, Synonyms and Analogies, Bias.  
-![q3_1](images/similarity.png)
+2. Prediction-Based Word Vectors: word2Vec.\
+![q2](images/word2vec)\
+3. Cosine Similarity and Distance: searching Polysemous Words, Synonyms and Analogies, Bias.\ 
+![q3_1](images/similarity.png)\
 ![q3_2](images/analogies.png)
 
 ## Assignment 2
@@ -24,7 +24,7 @@ CS224n: Natural Language Processing with Deep Learning Assignments Winter, 2019
 
 1. Sigmoid function, softmax, negative sampling loss and gradient functions' implementations.
 2. SGD implementation.
-3. Training word vectors, and later applying them to a simple sentiment analysis task using Stanford Sentiment Treebank (SST) dataset. 
+3. Training word vectors, and later applying them to a simple sentiment analysis task using Stanford Sentiment Treebank (SST) dataset.\
 ![q3](images/word_vectors.png)
 
 ## References
