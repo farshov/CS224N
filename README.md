@@ -6,38 +6,23 @@ CS224n: Natural Language Processing with Deep Learning Assignments Winter, 2019
 * Pytorch
 
 
-## Assignment #1 
+## Assignment 1 
+### Basic embedding technics
 
-1. Softmax
-2. Neural Network Basics
-3. word2vec
-![q3_word_vectors](http://wx2.sinaimg.cn/large/006Fmjmcly1fgydqi2vq4j30m80godgi.jpg)
-4. Sentiment Analysis
-![q4_reg_v_acc](http://wx1.sinaimg.cn/large/006Fmjmcly1fgydrwwnsbj30m80godgn.jpg)
-![q4_dev_conf](http://wx1.sinaimg.cn/large/006Fmjmcly1fgydrmd0wtj30m80gojrx.jpg)
+1. Count-Based Word Vectors: Co-Occurrence Word Embeddings and Matrix, SVD for its dimentional reduction.
+![q1](images/co-occurence)
+2. Prediction-Based Word Vectors: word2Vec.
+![q2](images/word2vec)
+3. Cosine Similarity and Distance: searching Polysemous Words, Synonyms and Analogies, Bias.  
+![q31](images/similarity.png)
+![q32](images/analogies)
 
-## Assignment #2
+## Assignment 2
+### Word2Vec's losses and gradients
 
-1. Tensorflow Softmax
-2. Neural Transition-Based Dependency Parsing
-
-```
-924/924 [==============================] - 49s - train loss: 0.0631    
-Evaluating on dev set - dev UAS: 88.54
-New best dev UAS! Saving model in ./data/weights/parser.weights
-================================================================================
-TESTING
-================================================================================
-Restoring the best model weights found on the dev set
-Final evaluation on test set - test UAS: 88.92
-Writing predictions
-Done!
-```
-
-3. Recurrent Neural Networks: Language Modeling
-![unrolled_rnn](http://wx3.sinaimg.cn/large/006Fmjmcly1fgzqfm9p4xj30p60bbdgu.jpg)
-
-
+1. Sigmoid function, softmax, negative sampling loss and gradient functions' implementations.
+2. SGD implementation.
+3. Training word vectors, and later applying them to a simple sentiment analysis task using Stanford Sentiment Treebank (SST) dataset. 
 ## References
 
 CS224n official website
