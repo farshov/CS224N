@@ -26,6 +26,7 @@ CS224n: Natural Language Processing with Deep Learning Assignments Winter, 2019
 3. Training word vectors, and later applying them to a simple sentiment analysis task using Stanford Sentiment Treebank (SST) dataset. 
 ## References
 
-CS224n official website
+YouTube playlist with lectures
 * https://www.youtube.com/playlist?list=PLoROMvodv4rOhcuXMZkNm7j3fVwBBY42z
+CS224n official website
 * http://web.stanford.edu/class/cs224n/index.html#schedule
