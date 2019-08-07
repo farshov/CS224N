@@ -13,10 +13,10 @@ CS224n: Natural Language Processing with Deep Learning Assignments Winter, 2019
 !![q1](images/co-occure)
 
 2. Prediction-Based Word Vectors: word2Vec.
-![q2](images/word2vec)
+!![q2](images/word2vec)
 3. Cosine Similarity and Distance: searching Polysemous Words, Synonyms and Analogies, Bias.  
-![q3_1](images/similarity.png)
-![q3_2](images/analogies)
+!![q3_1](images/similarity.png)
+!![q3_2](images/analogies)
 
 ## Assignment 2
 ### Word2Vec's losses and gradients 
