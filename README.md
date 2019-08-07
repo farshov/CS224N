@@ -11,10 +11,12 @@ CS224n: Natural Language Processing with Deep Learning Assignments Winter, 2019
 
 1. Count-Based Word Vectors: Co-Occurrence Word Embeddings and Matrix, SVD for its dimentional reduction.
 ![q1](images/co-occure)
+
 2. Prediction-Based Word Vectors: word2Vec.
 ![q2](images/word2vec)
 3. Cosine Similarity and Distance: searching Polysemous Words, Synonyms and Analogies, Bias.  
 ![q31](images/similarity.png)
+
 ![q32](images/analogies)
 
 ## Assignment 2
