@@ -10,7 +10,7 @@ CS224n: Natural Language Processing with Deep Learning Assignments Winter, 2019
 ### Basic embedding technics
 
 1. Count-Based Word Vectors: Co-Occurrence Word Embeddings and Matrix, SVD for its dimentional reduction.
-![q1](images/co-occure)
+!![q1](images/co-occure)
 
 2. Prediction-Based Word Vectors: word2Vec.
 ![q2](images/word2vec)
