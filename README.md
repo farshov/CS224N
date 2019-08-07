@@ -18,7 +18,8 @@ CS224n: Natural Language Processing with Deep Learning Assignments Winter, 2019
 ![q32](images/analogies)
 
 ## Assignment 2
-### Word2Vec's losses and gradients (All information in assignment_2/writting_assignment_and_instructions.pdf)
+### Word2Vec's losses and gradients 
+#### (All information is in assignment_2/writting_assignment_and_instructions.pdf)
 
 1. Sigmoid function, softmax, negative sampling loss and gradient functions' implementations.
 2. SGD implementation.
