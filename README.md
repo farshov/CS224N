@@ -6,7 +6,7 @@ CS224n: Natural Language Processing with Deep Learning Assignments Winter, 2019
 * Pytorch
 
 
-## Assignment 1 
+## * Assignment 1 
 ### Basic embedding technics
 
 1. Count-Based Word Vectors: Co-Occurrence Word Embeddings and Matrix, SVD for its dimentional reduction.\
@@ -18,7 +18,7 @@ CS224n: Natural Language Processing with Deep Learning Assignments Winter, 2019
 ![q3_1](images/similarity.png)\
 ![q3_2](images/analogies.png)
 
-## Assignment 2
+## * Assignment 2
 ### Word2Vec's losses and gradients 
 #### All information is in assignment_2/writting_assignment_and_instructions.pdf
 
