@@ -24,6 +24,7 @@ CS224n: Natural Language Processing with Deep Learning Assignments Winter, 2019
 1. Sigmoid function, softmax, negative sampling loss and gradient functions' implementations.
 2. SGD implementation.
 3. Training word vectors, and later applying them to a simple sentiment analysis task using Stanford Sentiment Treebank (SST) dataset. 
+![q3](images/word_vectors.png)
 ## References
 
 YouTube playlist with lectures:
