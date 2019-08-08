@@ -30,10 +30,10 @@ CS224n: Natural Language Processing with Deep Learning Assignments Winter, 2019
 # Assignment 3
 ### Parsing and Modeling
 #### All information is in assignment_3/a3.pdf
-Dependency parsing:
-1. Transition-based parsing (Stack + buffer)
-2. Malt parser performed by dense Neural Net and Word Embedding
-![qw](images/results_NeuDepParser.png)
+Dependency parsing:\
+  1. Transition-based parsing (Stack + buffer)\
+  2. Malt parser performed by dense Neural Net and Word Embedding\
+![qw](images/results_NeuDepParser.png =250x250)\
 
 
 ## References
