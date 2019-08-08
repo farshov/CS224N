@@ -33,7 +33,7 @@ CS224n: Natural Language Processing with Deep Learning Assignments Winter, 2019
 Dependency parsing:\
   1. Transition-based parsing (Stack + buffer)\
   2. Malt parser performed by dense Neural Net and Word Embedding\
-<img src="images/results_NeuDepParser.png" width="300">
+<img src="images/results_NeuDepParser.png" width="500">
 
 
 ## References
