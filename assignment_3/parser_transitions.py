@@ -8,6 +8,7 @@ Sahil Chopra <schopra8@stanford.edu>
 
 import sys
 
+
 class PartialParse(object):
     def __init__(self, sentence):
         """Initializes this partial parse.
@@ -31,6 +32,9 @@ class PartialParse(object):
         ### Note: The root token should be represented with the string "ROOT"
         ###
 
+        self.stack = ["ROOT"]
+        self.buffer = sentence.copy()
+        self.dependencies = []
 
         ### END YOUR CODE
 
@@ -49,6 +53,20 @@ class PartialParse(object):
         ###         1. Shift
         ###         2. Left Arc
         ###         3. Right Arc
+
+        if transition == "S":
+            if len(self.buffer) > 0:
+                self.stack.append(self.buffer.pop(0))
+        else:
+            if len(self.stack) >= 2:
+                el_1 = self.stack.pop()
+                el_2 = self.stack.pop()
+                if transition == "LA":
+                    self.dependencies.append((el_1, el_2))
+                    self.stack.append(el_1)
+                elif transition == "RA":
+                    self.dependencies.append((el_2, el_1))
+                    self.stack.append(el_2)
 
 
         ### END YOUR CODE
@@ -100,10 +118,20 @@ def minibatch_parse(sentences, model, batch_size):
     ###             contains references to the same objects. Thus, you should NOT use the `del` operator
     ###             to remove objects from the `unfinished_parses` list. This will free the underlying memory that
     ###             is being accessed by `partial_parses` and may cause your code to crash.
+    num_sentences = len(sentences)
+    partial_parses = [PartialParse(sentence) for sentence in sentences]
+    unfinished_parses = partial_parses[:]  # shallow copy of pp
 
+    while len(unfinished_parses) > 0:
+        parsers = unfinished_parses[:batch_size]
+        batch_transitions = model.predict(parsers)
+        for pp, transition in zip(parsers, batch_transitions):
+            pp.parse([transition])
+            if len(pp.buffer) == 0 and len(pp.stack) == 1:
+                unfinished_parses.remove(pp)
 
     ### END YOUR CODE
-
+    dependencies = [pp.dependencies for pp in partial_parses]
     return dependencies
 
 

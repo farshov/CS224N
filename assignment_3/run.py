@@ -18,6 +18,7 @@ from tqdm import tqdm
 from parser_model import ParserModel
 from utils.parser_utils import minibatches, load_and_preprocess_data, AverageMeter
 
+
 # -----------------
 # Primary Functions
 # -----------------
@@ -46,6 +47,8 @@ def train(parser, train_data, dev_data, output_path, batch_size=1024, n_epochs=1
     ###     Adam Optimizer: https://pytorch.org/docs/stable/optim.html
     ###     Cross Entropy Loss: https://pytorch.org/docs/stable/nn.html#crossentropyloss
 
+    optimizer = optim.Adam(parser.model.parameters(), lr=lr)
+    loss_func = nn.CrossEntropyLoss()
 
     ### END YOUR CODE
 
@@ -76,7 +79,7 @@ def train_for_epoch(parser, train_data, dev_data, optimizer, loss_func, batch_si
 
     @return dev_UAS (float): Unlabeled Attachment Score (UAS) for dev data
     """
-    parser.model.train() # Places model in "train" mode, i.e. apply dropout layer
+    parser.model.train()  # Places model in "train" mode, i.e. apply dropout layer
     n_minibatches = math.ceil(len(train_data) / batch_size)
     loss_meter = AverageMeter()
 
@@ -99,6 +102,12 @@ def train_for_epoch(parser, train_data, dev_data, optimizer, loss_func, batch_si
             ### Please see the following docs for support:
             ###     Optimizer Step: https://pytorch.org/docs/stable/optim.html#optimizer-step
 
+            logits = parser.model(train_x)
+
+            optimizer.zero_grad()
+            loss = loss_func(logits, train_y)
+            loss.backward()
+            optimizer.step()
 
             ### END YOUR CODE
             prog.update(1)
@@ -115,10 +124,10 @@ def train_for_epoch(parser, train_data, dev_data, optimizer, loss_func, batch_si
 
 if __name__ == "__main__":
     # Note: Set debug to False, when training on entire corpus
-    debug = True
-    # debug = False
+    # debug = True
+    debug = False
 
-    assert(torch.__version__ == "1.0.0"),  "Please install torch version 1.0.0"
+    #assert(torch.__version__ == "1.0.0"),  "Please install torch version 1.0.0"
 
     print(80 * "=")
     print("INITIALIZING")
