@@ -34,6 +34,14 @@ Dependency parsing:\
   2. Malt parser performed by dense Neural Net and Word Embedding\
 <img src="images/results_NeuDepParser.png" width="500">
 
+# Assignment 4
+### Word-level Neural Machine Translation
+#### All information about architecture is in assignment_4/a4.pdf
+Model is based on:\
+  1. LSTM\
+  2. Attention\
+<img src="images/test_BLEU.png" width="500">
+
 
 ## References
 
