@@ -29,17 +29,18 @@ CS224n: Natural Language Processing with Deep Learning Assignments Winter, 2019
 # Assignment 3
 ### Parsing and Modeling
 #### All information is in assignment_3/a3.pdf
-Dependency parsing:\
-  1. Transition-based parsing (Stack + buffer)\
-  2. Malt parser performed by dense Neural Net and Word Embedding\
+Dependency parsing:
+  1. Transition-based parsing (Stack + buffer)
+  2. Malt parser performed by dense Neural Net and Word Embedding
 <img src="images/results_NeuDepParser.png" width="500">
 
 # Assignment 4
 ### Word-level Neural Machine Translation
+#### Spanish-to-English translation
 #### All information about architecture is in assignment_4/a4.pdf
-Model is based on:\
-  1. LSTM\
-  2. Attention\
+Model is based on:
+  1. LSTM
+  2. Attention
 <img src="images/test_BLEU.png" width="500">
 
 
