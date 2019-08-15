@@ -42,7 +42,7 @@ Model is based on:
   1. LSTM
   2. Attention
 
-Results of testing:
+Results of testing:\
 <img src="images/test_BLEU.png" width="500">
 
 
