@@ -45,6 +45,17 @@ Model is based on:
 Results of testing:\
 <img src="images/test_BLEU.png" width="500">
 
+# Assignment 5
+### Charactter-level Neural Machine Translation
+#### Spanish-to-English translation
+#### All information about architecture is in assignment_5/a5.pdf
+Model is based on previous assignment. Differences:
+  1. Character-level embedding for encoder
+  2. Character-level decoding for <UNK> words
+
+Results of testing:\
+<img src="images/BLEU_char_nmt" width="500">
+
 
 ## References
 
