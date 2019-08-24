@@ -54,7 +54,7 @@ Model is based on previous assignment. Differences:
   2. Character-level decoding for <UNK> words
 
 Results of testing:\
-<img src="images/BLEU_char_nmt" width="500">
+<img src="images/BLEU_char_nmt.png" width="500">
 
 
 ## References
