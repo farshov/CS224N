@@ -56,6 +56,8 @@ Model is based on previous assignment. Differences:
 Results of testing:\
 <img src="images/BLEU_char_nmt.png" width="500">
 
+# Final Project
+### In progress
 
 ## References
 
